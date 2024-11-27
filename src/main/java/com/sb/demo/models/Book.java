@@ -21,6 +21,9 @@ public class Book {
   private String coverPhotoURL;
   private List<String> genres;
 
+  public Book() {
+  }
+
   public Book(Integer id, String title, String description, String coverPhotoURL, List<String> genres) {
     this.id = id;
     this.title = title;
