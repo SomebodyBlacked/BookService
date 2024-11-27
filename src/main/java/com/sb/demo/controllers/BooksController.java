@@ -18,4 +18,9 @@ public class BooksController {
   public Iterable<Book> getBooks() {
     return bookRepository.findAll();
   }
+
+  @GetMapping("count")
+  public long countBooks() {
+    return bookRepository.count();
+  }
 }
